@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let company = {
+  companyName: "Tech Solutions",
+  location: "Karachi",
+  employees: [
+    { name: "Rafay", age: 25, position: "Developer" },
+    { name: "Ali", age: 28, position: "Designer" },
+    { name: "Ahmed", age: 30, position: "Manager" }
+  ]
+};
+
+document.write("Company Name:", company.companyName);
+
+document.write("Employees:");
+
+for (let i = 0; i < company.employees.length; i++) {
+  document.write(company.employees[i].name);
+}
+
+    </script>
+</body>
+</html>

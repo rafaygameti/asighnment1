@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let students = [
+  { name: "Ali", marks: 75 },
+  { name: "Rafay", marks: 88 },
+  { name: "Ahmed", marks: 92 },
+  { name: "Babar", marks: 67 },
+  { name: "Imran", marks: 85 }
+];
+
+
+document.write("All Students:");
+students.forEach(student => {
+  document.write(student.name + " - " + student.marks);
+});
+
+
+let toppers = students.filter(student => student.marks > 80);
+
+document.write("Students scoring above 80:");
+toppers.forEach(student => {
+  document.write(student.name + " - " + student.marks);
+});
+
+    </script>
+</body>
+</html>
